@@ -41,6 +41,7 @@ class LoginTwoPage extends StatelessWidget {
           padding: EdgeInsets.all(20.0),
           child: Stack(
             children: <Widget>[
+              ///剪裁
               ClipPath(
                 clipper: RoundedDiagonalPathClipper(),
                 child: Container(

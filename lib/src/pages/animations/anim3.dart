@@ -23,15 +23,18 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
     _scrollController.addListener(_onScroll);
   }
 
+  ///设置透明度
   double _getOpacity() {
     double op = (topPosition + 80) / 80;
     return op > 1 || op < 0 ? 1 : op;
   }
 
+  ///监听滚动
   _onScroll() {
     if (_scrollController.offset > 50) {
       if (topPosition < 0)
         setState(() {
+          ///计算偏移
           topPosition = -130 + _scrollController.offset;
           if (_scrollController.offset > 130) topPosition = 0;
         });

@@ -18,6 +18,7 @@ class ProfileFivePage extends StatelessWidget {
           Container(
             height: 360,
             decoration: BoxDecoration(
+              ///圆角
               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50.0), bottomRight: Radius.circular(50.0)),
               gradient: LinearGradient(
                 colors: [color1,color2],
@@ -148,6 +149,7 @@ class ProfileFivePage extends StatelessWidget {
             ),
           ),
 
+          ///也是Widget
           AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,

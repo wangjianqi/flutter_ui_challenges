@@ -79,6 +79,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
           ])),
           Expanded(
             flex: 2,
+            ///Swiper
             child: Swiper(
               physics: BouncingScrollPhysics(),
               viewportFraction: 0.8,
@@ -88,6 +89,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
               onIndexChanged: (index) {
                 _controller.reverse();
                 setState(() {
+                  ///记录当前index
                   prevIndex = currentIndex;
                   currentIndex = index;
                   _controller.forward();
@@ -124,6 +126,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
           ),
           Stack(
             children: <Widget>[
+              ///
               AnimatedOpacity(
                 opacity: currentIndex == 0 ? 1 : 0,
                 child: _buildDesc(0),

@@ -157,6 +157,7 @@ class ProfileTwoPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
+                          ///上下布局
                           child: ListTile(
                             title: Text("10.3K",
                               textAlign: TextAlign.center,
