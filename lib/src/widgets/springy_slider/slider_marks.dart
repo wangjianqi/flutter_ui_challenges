@@ -95,6 +95,7 @@ class SliderMarksPainter extends CustomPainter {
 
       final markY = i * gap + paddingTop;
 
+      ///绘制
       canvas.drawLine(
         new Offset(size.width - paddingRight - markWidth, markY),
         new Offset(size.width - paddingRight, markY),

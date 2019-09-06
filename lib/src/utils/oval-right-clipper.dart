@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 
+///切
 class OvalRightBorderClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {

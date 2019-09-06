@@ -53,12 +53,14 @@ class SpringySliderController extends ChangeNotifier {
   // Elapsed time that has passed since the start of the spring.
   double _springTime;
 
+  ///构造方法
   SpringySliderController({
     double sliderPercent = 0.0,
     vsync,
   })  : _vsync = vsync,
         _sliderPercent = sliderPercent;
 
+  ///销毁
   void dispose() {
     if (_springTicker != null) {
       _springTicker.dispose();
@@ -69,6 +71,7 @@ class SpringySliderController extends ChangeNotifier {
 
   SpringySliderState get state => _state;
 
+  ///滑动的值
   double get sliderValue => _sliderPercent;
 
   set sliderValue(double newValue) {
@@ -86,6 +89,7 @@ class SpringySliderController extends ChangeNotifier {
     notifyListeners();
   }
 
+  ///开始拖拽
   void onDragStart(double draggingHorizontalPercent) {
     if (_springTicker != null) {
       _springTicker
@@ -100,6 +104,7 @@ class SpringySliderController extends ChangeNotifier {
     notifyListeners();
   }
 
+  ///拖拽结束
   void onDragEnd() {
     _state = SpringySliderState.springing;
 

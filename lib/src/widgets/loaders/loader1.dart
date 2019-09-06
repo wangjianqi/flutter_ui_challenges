@@ -32,6 +32,7 @@ class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMix
     animation.addStatusListener((AnimationStatus status){
 
     });
+    ///重复
     controller.repeat();
   }
 

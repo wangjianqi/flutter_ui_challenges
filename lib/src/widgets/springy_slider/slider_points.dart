@@ -56,6 +56,7 @@ class SliderPoints extends StatelessWidget {
                 points: pointsYouHave,
                 isAboveSlider: false,
                 isPointsYouNeed: false,
+                ///背景色
                 color: Theme.of(context).scaffoldBackgroundColor,
               ),
             ),
@@ -82,6 +83,7 @@ class Points extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final percent = points / 100.0;
+    ///字体大小
     final pointTextSize = 50.0 + (50.0 * percent);
 
     return Row(

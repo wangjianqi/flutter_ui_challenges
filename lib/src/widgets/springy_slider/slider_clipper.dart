@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
 
+///绘制
 class SliderClipper extends CustomClipper<Path> {
   final SpringySliderController sliderController;
   final double paddingTop;

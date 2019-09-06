@@ -9,6 +9,7 @@ import 'package:intro_views_flutter/intro_views_flutter.dart';
 
 class SmartWalletOnboardingPage extends StatelessWidget {
   static final String path = "lib/src/pages/onboarding/smart_wallet_onboarding.dart";
+  ///model
   final pages = [
     PageViewModel(
       pageColor: Color(0xF6F6F7FF),
@@ -103,6 +104,7 @@ class SmartWalletOnboardingPage extends StatelessWidget {
                   fontFamily: "Regular",
               ),
             ),
+            ///Logo图标
             Positioned(
               top: 20.0,
               left: MediaQuery.of(context).size.width/2 - 50,

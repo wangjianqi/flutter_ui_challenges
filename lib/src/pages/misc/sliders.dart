@@ -68,6 +68,7 @@ class SlidersPage extends StatelessWidget {
                 },
                 itemWidth: 300,
                 itemCount: 10,
+                ///Stack类型
                 layout: SwiperLayout.STACK,
               ),
             ),

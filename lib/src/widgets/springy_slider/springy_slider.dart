@@ -11,6 +11,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
+import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_debug.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_dragger.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_goo.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_marks.dart';
@@ -56,12 +57,14 @@ class _SpringySliderState extends State<SpringySlider> with TickerProviderStateM
       sliderPercent = sliderController.springingPercent;
     }
 
+    ///Slider
     return SliderDragger(
       sliderController: sliderController,
       paddingTop: paddingTop,
       paddingBottom: paddingBottom,
       child: Stack(
         children: <Widget>[
+          ///指示
           SliderMarks(
             markCount: widget.markCount,
             markColor: widget.positiveColor,
@@ -86,13 +89,13 @@ class _SpringySliderState extends State<SpringySlider> with TickerProviderStateM
             paddingTop: paddingTop,
             paddingBottom: paddingBottom,
           ),
-//          new SliderDebug(
-//            sliderPercent: sliderController.state == SpringySliderState.dragging
-//                ? sliderController.draggingPercent
-//                : sliderPercent,
-//            paddingTop: paddingTop,
-//            paddingBottom: paddingBottom,
-//          ),
+          new SliderDebug(
+            sliderPercent: sliderController.state == SpringySliderState.dragging
+                ? sliderController.draggingPercent
+                : sliderPercent,
+            paddingTop: paddingTop,
+            paddingBottom: paddingBottom,
+          ),
         ],
       ),
     );

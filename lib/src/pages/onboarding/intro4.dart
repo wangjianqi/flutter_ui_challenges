@@ -32,6 +32,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
+          ///背景
           Container(
             alignment: Alignment.center,
             child: Image.asset(bgImage, fit: BoxFit.contain,),

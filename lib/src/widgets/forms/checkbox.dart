@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 class PCheckboxListTile extends StatelessWidget {
   final bool value;
   final String title;
+  ///Function类型
   final Function onChanged;
   final Color selectedColor;
   final Color color;

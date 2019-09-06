@@ -37,6 +37,7 @@ class _HiddenMenuPageState extends State<HiddenMenuPage> with TickerProviderStat
       });
   }
 
+  ///显示和隐藏
   _handleMenuPress() {
     setState(() {
           openController.reset();
@@ -130,6 +131,7 @@ class _HiddenMenuPageState extends State<HiddenMenuPage> with TickerProviderStat
                   color: Colors.transparent,
                   child: Material(
                     elevation: 16.0,
+                    ///切三角
                     shape: BeveledRectangleBorder(
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(46.0)),
                     ),

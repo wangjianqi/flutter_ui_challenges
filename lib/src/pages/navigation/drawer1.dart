@@ -19,6 +19,7 @@ class DarkDrawerPage extends StatelessWidget {
       key: _key,
       appBar: AppBar(
         title: Text('Dark Drawer Navigation'),
+        ///自己实现
         automaticallyImplyLeading: false,
         leading: IconButton(
           icon: Icon(Icons.menu),
@@ -71,6 +72,7 @@ class DarkDrawerPage extends StatelessWidget {
       clipper: OvalRightBorderClipper(),
       child: Container(
         padding: const EdgeInsets.only(left: 16.0,right: 40),
+        ///背景
         decoration: BoxDecoration(
           color: primary,
           boxShadow: [

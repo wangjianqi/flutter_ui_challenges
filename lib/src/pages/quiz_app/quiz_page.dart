@@ -40,7 +40,7 @@ class _QuizPageState extends State<QuizPage> {
       options.add(question.correctAnswer);
       options.shuffle();
     }
-    
+    ///监听返回
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
@@ -129,6 +129,7 @@ class _QuizPageState extends State<QuizPage> {
       return;
     }
     if(_currentIndex < (widget.questions.length - 1)){
+      ///下一题
       setState(() {
           _currentIndex++;
       });

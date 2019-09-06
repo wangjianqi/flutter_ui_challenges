@@ -41,6 +41,7 @@ class CustomPaginationBuilder extends SwiperPlugin {
 
     for (int i = 0; i < itemCount; ++i) {
       bool active = i == activeIndex;
+      ///尺寸
       Size size = active ? this.activeSize : this.size;
       list.add(SizedBox(
         width: size.width,

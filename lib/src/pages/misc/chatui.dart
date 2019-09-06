@@ -225,6 +225,7 @@ class ChatUi extends StatelessWidget {
   }
 }
 
+///头像
 class OnlinePersonAction extends StatelessWidget {
   final String personImagePath;
   final Color actColor;

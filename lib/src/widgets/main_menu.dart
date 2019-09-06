@@ -112,6 +112,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Profile Seven", ProfileSevenPage(),
           path: ProfileSevenPage.path),
     ]),
+
+
+    ///
     MenuItem(title: "Autnentication", icon: Icons.lock, items: [
       SubMenuItem("Auth One", AuthOnePage(), path: AuthOnePage.path),
       SubMenuItem("Auth Two", AuthTwoPage(), path: AuthTwoPage.path),
@@ -128,6 +131,9 @@ class _MainMenuState extends State<MainMenu> {
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
     ]),
+
+
+    ///
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage(),
           path: EcommerceOnePage.path),
@@ -149,11 +155,16 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Rounded Details Page", EcommerceDetailThreePage(),
           path: EcommerceDetailThreePage.path),
     ]),
+
+    ///
     MenuItem(title: "Blog", icon: Icons.pages, items: [
       SubMenuItem("Blog Home One", BlogHomeOnePage(), path: BlogHomeOnePage.path),
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),
       SubMenuItem("Article Two", ArticleTwoPage(), path: ArticleTwoPage.path),
     ]),
+
+
+    ///
     MenuItem(title: "Food", icon: Icons.fastfood, items: [
       SubMenuItem("Fruits Add to Cart", AvocadoPage(), path: AvocadoPage.path),
       SubMenuItem("Cake Details", CakePage(), path: CakePage.path),
@@ -165,6 +176,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Food Delivery", FoodDeliveryHomePage(),
           path: FoodDeliveryHomePage.path),
     ]),
+
+
+    ///
     MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
       SubMenuItem("Quiz Home", QuizHomePage(), path: QuizHomePage.path),
       SubMenuItem(
@@ -189,6 +203,8 @@ class _MainMenuState extends State<MainMenu> {
           ),
           path: CheckAnswersPage.path),
     ]),
+
+    ///
     MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
       SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
       SubMenuItem("Todo Home One", TodoHomeOnePage(),
@@ -196,6 +212,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Todo Home Two", TodoHomeTwoPage(),
           path: TodoHomeTwoPage.path),
     ]),
+
+    ///
     MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage(), path: TravelHomePage.path),
       SubMenuItem("Travel Nepal", TravelNepalPage(),
@@ -204,10 +222,15 @@ class _MainMenuState extends State<MainMenu> {
           path: DestinationPage.path),
       SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
     ]),
+
+
+    ///
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
       SubMenuItem("Room Details", HotelDetailsPage(), path: HotelDetailsPage.path),
     ]),
+
+    ///
     MenuItem(title: "Navigation", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
       SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
@@ -217,6 +240,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Fancy Bottom Navigation ", FancyBottomBarPage(),
           path: FancyBottomBarPage.path),
     ]),
+
+    ///
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
       SubMenuItem("Landing Page", LandingOnePage(), path: LandingOnePage.path),
       SubMenuItem("Onboarding 4", IntroFourPage(), path: IntroFourPage.path),
@@ -226,7 +251,10 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
+
+    ///
     MenuItem(title: "Miscllaneous", items: [
+      ///chat
       SubMenuItem("Chat Messaages", ChatTwoPage(),
           path: ChatTwoPage.path),
       SubMenuItem("Dashboard One", DashboardOnePage(),

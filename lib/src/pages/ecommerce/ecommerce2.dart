@@ -139,11 +139,13 @@ class EcommerceTwoPage extends StatelessWidget {
                     fontSize: 30.0,
                   )),
                   SizedBox(height: 20.0,),
-                  Text(item["tags"], style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.grey,
-                    height: 1.5
-                  ))
+                  Flexible(
+                    child: Text(item["tags"], style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey,
+                      height: 1.5
+                    ),overflow: TextOverflow.fade,),
+                  )
                 ],
               ),
               margin: EdgeInsets.only(top: 20.0, bottom: 20.0),

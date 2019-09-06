@@ -20,6 +20,7 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
   }
 
   PageController pageController = PageController(initialPage: 0);
+  ///广播
   StreamController<int> indexcontroller = StreamController<int>.broadcast();
   int index = 0;
   @override
@@ -29,6 +30,7 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
         title: Text('Bottom navigation fancy'),
       ),
       body: PageView(
+        ///不能滑动
         physics: NeverScrollableScrollPhysics(),
         onPageChanged: (index) {
           indexcontroller.add(index);
@@ -180,7 +182,7 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
   Widget build(BuildContext context) {
     activeColor =
         (activeColor == null) ? Theme.of(context).accentColor : activeColor;
-
+    ///背景色
     backgroundColor = (backgroundColor == null)
         ? Theme.of(context).bottomAppBarColor
         : backgroundColor;

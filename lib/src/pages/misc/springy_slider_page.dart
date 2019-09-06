@@ -20,6 +20,7 @@ class SpringySliderPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ///圆角
     return ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(20.0)),
       child: Scaffold(

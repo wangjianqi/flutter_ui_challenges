@@ -215,6 +215,7 @@ class _ChoiceChipState extends State<ChoiceChip> {
   }
 }
 
+///裁剪
 class WaveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {

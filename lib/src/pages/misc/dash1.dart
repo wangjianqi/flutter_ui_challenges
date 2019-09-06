@@ -39,7 +39,7 @@ class DashboardOnePage extends StatelessWidget {
 
   SliverPadding _buildStats() {
     final TextStyle stats = TextStyle(
-        fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.white);
+        fontWeight: FontWeight.bold, fontSize: 10.0, color: Colors.white);
     return SliverPadding(
       padding: const EdgeInsets.all(16.0),
       sliver: SliverGrid.count(
@@ -256,6 +256,7 @@ class DashboardOnePage extends StatelessWidget {
     );
   }
 
+  ///头像
   Widget _buildAvatar(BuildContext context) {
     return IconButton(
       iconSize: 40,
@@ -284,6 +285,7 @@ class DashboardOnePage extends StatelessWidget {
             title,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
           ),
+          ///数组里添加
           if (child != null) ...[const SizedBox(height: 10.0), child]
         ],
       ),
