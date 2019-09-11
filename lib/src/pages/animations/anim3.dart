@@ -109,6 +109,7 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
               ],
             ),
           ),
+          ///只有位置移动
           Positioned(
             top: topPosition,
             left: 0,
@@ -135,6 +136,7 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                 ),
               )
           ),
+          ///只显示一个返回按钮
           SizedBox(
             height: 80,
             child: AppBar(

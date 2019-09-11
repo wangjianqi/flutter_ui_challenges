@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
@@ -42,7 +42,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      
+
       body: CustomScrollView(
         slivers: <Widget>[
           _buildAppBar(context),
@@ -108,7 +108,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                       Expanded(child: Text("Deliver to")),
                       IconButton(icon: Icon(Icons.shopping_cart), onPressed: (){},)
                     ],
-                  ), 
+                  ),
                   SizedBox(height: 5.0,),
                   TextField(
                     decoration: InputDecoration(
@@ -137,7 +137,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
   SliverGrid _buildPopularRestaurant() {
     return SliverGrid(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2
+            crossAxisCount: 2, childAspectRatio:0.9
           ),
           delegate: SliverChildBuilderDelegate((BuildContext context, int index){
               return Container(
@@ -154,9 +154,11 @@ class FoodDeliveryHomePage extends StatelessWidget {
                       fontSize: 14.0
                     ))),
                     SizedBox(height: 5.0,),
-                    Text(restaurants[index]["specials"], style: Theme.of(context).textTheme.subhead.merge(TextStyle(
-                      fontSize: 12.0
-                    )))
+                    Expanded(
+                      child: Text(restaurants[index]["specials"], style: Theme.of(context).textTheme.subhead.merge(TextStyle(
+                        fontSize: 12.0
+                      ))),
+                    )
                   ],
                 ),
               );

@@ -16,6 +16,7 @@ class LoginThreePage extends StatelessWidget {
         children: <Widget>[
           Container(
             height: 650,
+            ///旋转
             child: RotatedBox(
               quarterTurns: 2,
               child: WaveWidget(

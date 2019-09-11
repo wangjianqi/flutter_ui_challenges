@@ -23,7 +23,7 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
       ),
       body: BottomReveal(
         openIcon: Icons.add,
-        closeIcon: Icons.close,
+        closeIcon: Icons.dehaze,
         revealWidth: 100,
         revealHeight: 100,
         backColor: Color(0xff2D0C3F),
@@ -31,6 +31,7 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
         rightContent: _buildRightMenu(),
         bottomContent: _buildBottomContent(),
         controller: _menuController,
+        ///显示的Widget
         body: ListView.builder(
           padding: const EdgeInsets.all(16.0),
           itemBuilder: (_,index)=>Card(
@@ -46,22 +47,22 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
 
   TextField _buildBottomContent() {
     return TextField(
-        style: TextStyle(
+      style: TextStyle(
           color: Colors.white,
           fontSize: 18.0
-        ),
-        decoration: InputDecoration(
-          filled: true,
-          fillColor: Colors.grey,
-          contentPadding: const EdgeInsets.all(16.0),
-          prefixIcon: Icon(Icons.search, color: Colors.white,),
-          border: OutlineInputBorder(
+      ),
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.grey,
+        contentPadding: const EdgeInsets.all(16.0),
+        prefixIcon: Icon(Icons.search, color: Colors.white,),
+        border: OutlineInputBorder(
             gapPadding: 8.0,
             borderSide: BorderSide(color: Colors.grey),
             borderRadius: BorderRadius.circular(30.0)
-          ),
         ),
-      );
+      ),
+    );
   }
 
   Column _buildRightMenu() {

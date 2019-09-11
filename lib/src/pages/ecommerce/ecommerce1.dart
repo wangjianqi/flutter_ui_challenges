@@ -101,7 +101,7 @@ class EcommerceOnePage extends StatelessWidget {
 
   Widget _buildPopular() {
     return Container(
-      height: 180,
+//      height: 180,
       child: Column(
         children: <Widget>[
           Container(

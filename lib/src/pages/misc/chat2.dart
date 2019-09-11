@@ -124,6 +124,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
           current ? CrossAxisAlignment.end : CrossAxisAlignment.start,
       children: <Widget>[
         SizedBox(width: current ? 30.0 : 20.0),
+        ///左边的头像
         if (!current) ...[
           CircleAvatar(
             backgroundImage: AssetImage(
@@ -133,18 +134,20 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
           ),
           const SizedBox(width: 5.0),
         ],
-        Container(
-          padding: const EdgeInsets.symmetric(
-            vertical: 8.0,
-            horizontal: 16.0,
-          ),
-          decoration: BoxDecoration(
-              color: current ? Theme.of(context).primaryColor : Colors.white,
-              borderRadius: BorderRadius.circular(10.0)),
-          child: Text(
-            message.description,
-            style: TextStyle(
-                color: current ? Colors.white : Colors.black, fontSize: 18.0),
+        Expanded(
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              vertical: 8.0,
+              horizontal: 16.0,
+            ),
+            decoration: BoxDecoration(
+                color: current ? Theme.of(context).primaryColor : Colors.white,
+                borderRadius: BorderRadius.circular(10.0)),
+            child: Text(
+              message.description,
+              style: TextStyle(
+                  color: current ? Colors.white : Colors.black, fontSize: 18.0),
+            ),
           ),
         ),
         if (current) ...[
@@ -153,7 +156,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
             backgroundImage: AssetImage(
               current ? avatars[0] : avatars[1],
             ),
-            radius: 10.0,
+            radius: 20.0,
           ),
         ],
         SizedBox(width: current ? 20.0 : 30.0),

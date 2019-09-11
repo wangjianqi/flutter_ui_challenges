@@ -90,6 +90,8 @@ class MainMenu extends StatefulWidget {
 
 class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
+
+    ///动画
     MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
       SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
           path: FancyAppbarAnimation.path),
@@ -98,6 +100,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
           path: AnimationTwoPage.path),
     ]),
+
+
+
     MenuItem(title: "Profile", icon: Icons.person, items: [
       SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
       SubMenuItem("Profile Two", ProfileTwoPage(), path: ProfileTwoPage.path),
@@ -128,6 +133,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
       SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
     ]),
+
+
+
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
     ]),
@@ -270,6 +278,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Loaders", LoadersPage(), path: LoadersPage.path),
       SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
     ]),
+
+
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];
 
